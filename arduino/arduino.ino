@@ -10,7 +10,6 @@ int recieveByte = 0;
 String buffer = "";
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(115200);
   pinMode(p3, OUTPUT);
   pinMode(p5, OUTPUT);
@@ -30,7 +29,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   buffer = "";
 
   while (Serial.available() > 0) {
